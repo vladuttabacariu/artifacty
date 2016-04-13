@@ -1,0 +1,293 @@
+﻿
+<!DOCTYPE html>
+
+
+
+
+
+
+<html lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width">
+	<title>Raportul Proiectului Artifacty</title>
+	<link rel="stylesheet" href="css/scholarly.css">
+	<link rel="stylesheet" href="css/prism-coy.css">
+
+
+
+	<script src="./BoW_files/prism.js" defer=""></script>
+
+
+
+</head>
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+<header>
+	<p class="title">Artifacty</p>
+	<p class="subtitle"> Muzeu arheologic online </p>
+</header>
+	<article id="what" typeof="schema:ScholarlyArticle" resource="#">
+		<h1> Artifacty </h1>
+		<section>
+			<ol>
+				<li property="schema:author" typeof="sa:ContributorRole">
+					<a property="schema:author" href="https://www.facebook.com/vlad.andreit" typeof="schema:Person">
+						<span property="schema:givenName">Vlad Andrei</span>
+						<span property="schema:familyName">Tabacariu</span>
+					</a>
+				</li>
+				<li property="schema:contributor" typeof="sa:ContributorRole">
+					<a property="schema:contributor" href="https://www.facebook.com/profile.php?id=100001823139187" typeof="schema:Person">
+						<span property="schema:givenName">Andrei</span>
+						<span property="schema:familyName">Vrabie</span>
+					</a>
+				</li>
+				<li property="schema:contributor" typeof="sa:ContributorRole">
+					<a property="schema:contributor" href="https://www.facebook.com/simona.carp.31" typeof="schema:Person">
+						<span property="schema:givenName">Simona</span>
+						<span property="schema:familyName">Carp</span>
+					</a>
+				</li>
+			</ol>
+<ol>
+          <li id="scienceai">
+            <a href="http://info.uaic.ro" typeof="schema:Corporation">
+              <span property="schema:name">Faculty of Computer Science Iasi</span>
+            </a>
+          </li>
+        </ol>
+		</section>
+
+
+         <section>
+                          
+			<h3>Abstract</h3>
+			<p>  Lucrarea prezintă funcționalitătile principale ale aplicației web Artifacty, ce realizează managementul informațiilor privitoare 
+                             la colecții de artefacte arheologice, structurate pe tipuri și roluri, conform localizării geografice.</p>
+                           <p><b>Cuvinte cheie:</b> aplicație web, artefacte, arheologie, meta-date, statistică, design responsiv, import, export
+				
+			</p>
+		</section>
+
+		<section>
+
+                          
+			<h3>Cuprins:</h3>
+			<ol>
+				<li><a href="#descriere">Descrierea proiectului</a></li>
+				<li><a href="#tehnologii">Tehnologii folosite</a></li>
+				<li><a href="#structsite">Structura site-ului</a></li>
+                            <!--    <li><a href="#bazadate">Structura bazei de date</a></li> -->
+				<li><a href="#bibliografie">Bibliografie</a></li>
+			</ol>
+		</section>
+	
+		<section typeof="sa:Abstract" id="descriere">
+		<h3>Descrierea proiectului </h3>
+
+		<p>Proiectul de față îşi propune dezvoltarea unei aplicații web, care va gestiona și realiza managementul informaţiilor 
+                privitoare la colecții de artefacte arheologice.
+                       Acestea vor fi structurate în funcție de tipul, rolul și localizarea geografică a acestora.</p>
+                <p> Pentru fiecare artefact se vor atașa meta-date care să indice autorul, dacă există, licența de utilizare, valoarea și anul descoperirii. 
+                   De asemenea, se vor putea stabili diverse legături între anumite artefacte, ce pot facilita cautările anumitor categorii de interes.  </p>
+		<p>Se vor oferi situații statistice referitoare la resursele stocate: toate artefactele de tip masca mortuară descoperite
+                    în secolul XX în Africa, ori cele care nu au fost înca datate sau cercetate. 
+                 Fiecare utilizator va avea la dispoziție mecanisme de căutare și filtrare, care îl va ajuta să
+		selecteze doar anumite categorii dorite de artefacte. Serviciile cartografice pentru ilustrarea localizării geografice a fiecărui artefact vor oferi
+                       utilizatorului o experiență de utilizare captivantă. </p>
+                  <p> Se va folosi un design responsiv al interfeței Web, iar datele procesate vor putea fi importate sau exportate în format XML sau CSV.</p>
+
+		
+		</section>
+		
+		<section typeof="sa:Results" id="tehnologii">
+		
+		<h3>Tehnologii folosite</h3>
+
+		<p>În implementarea proiectului, se vor folosi numeroase tehnologii actuale, cu ajutorul cărora vom integra componentele aplicației:</p>
+
+		<ul>
+			<li><b>HTML/CSS</b>: HTML (HyperText Markup Language) este unul din primele elemente fundamentale ale WWW (World Wide Web) 
+                                   ce descrie formatul primar în care documentele sunt distribuite şi văzute pe Web.</li>
+			<li><b>PHP și JavaScript</b>: pentru a oferi funcționalitate sporită și interactivitate cu clientul. Scripturile  Javascript 
+                              sunt introduse in pagina HTML si sunt interpretate si executate de browser. Javascript poate fi considerat o unealtă foarte
+                               bună pentru controlul conținutului paginilor în funcție de data, ora, sistemul de operare sau browserul utilizatorilor,
+                               pentru realizarea de site-uri interactive, care să comunice cu vizitatorii, site-uri dinamice, dar și pentru validare a datelor primite din formulare, 
+                                dar nu numai atât, acestea fiind doar cateva din posibilitățile pe care le oferă acest limbaj.</li>
+			<li><b>MySQL</b>: va face legătura dintre baza de date și interfață. MySQL este un sistem de baze de date funcțional independent.
+                                În MySQL, spațiul alocat pe discul serverului este în funcție de tipul de date.</li>
+		</ul>
+		</section>
+
+		<!-- section typeof="sa:Results">
+		<a name="bazadate"></a>
+		<h3>Structura Bazei de Date</h3>
+
+		
+		</section> -->
+
+		<section typeof="sa:Results" id="structsite">
+		
+		<h3>Structura site-ului</h3>
+
+		<p></p>
+
+		<figure typeof="sa:Image">
+		<center><p><img src="poza1.png" alt="Pagina Home" width="40%"/></p></center>
+		</figure>
+
+		<figure typeof="sa:Image">
+		<center><p><img src="poza2.png" alt="Pagina Home" width="40%"/></p></center>
+		</figure>
+		<section>
+						<ol>
+					<li>
+						<section typeof="sa:Abstract">
+							<h3 class="page">
+								Homepage
+							</h3>
+							<p>
+								Aceasta pagina este cea care il intampina pe utilizator la prima accesare a aplicatiei.
+							</p>
+							<p>
+								Aceasta pagina va cuprinde o descriere a intregii aplicatii ,a functionalitatilor oferite.
+							</p>
+							<p>
+								In partea de sus , in coltul din dreapta, vom avea un buton care va permite utilizatorului sa se logheze si un alt buton cu care se va putea inregistrare
+								in cazul in care nu are un cont existent.
+							</p>
+							<p>
+								In centrul paginii va fi incarcat un document de tip SVG(Scalable Vector Graphics) care va reprezenta o harta a lumii cu granitele tuturor tarilor delimitate. 
+								Cand utilizatorul va plana cu mouse-ul asupra lor, in coltul stanga jos al hartii va aparea un container cu numele tarii respective. Utilizatorul va putea apasa pe una din aceste tarii
+								iar la apasare va fi redirectionat care alta pagina. Aceasta pagina va contine toate obiectele arheologice ale zonei/tarii selectate la pagina anterioara.
+								
+							</p>
+						</section>
+					</li>
+					
+					<figure typeof="sa:Image">
+					<center><p><img src="indexpage.jpg" alt="Pagina Home" width="40%"/></p></center>
+					</figure>
+					
+					
+					<li>
+						<section typeof="sa:Abstract">
+							<h3 class="page">
+								Register
+							</h3>
+							<p>
+								Aceasta pagina prezinta formularul de inregistrare pe site. Utilizatorul va trebui sa furnizeze urmatoarele informatii :
+								</p><ul>
+									<li>
+										Nume									
+									</li>
+									<li>
+										E-mail
+									</li>
+									<li>
+										Parola
+									</li>
+									<li>
+										Confirmarea Parolei
+									</li>
+								</ul>
+								Daca datele au fost introduse corect , apasand pe butonul de inregistrare, utilizatorul va primi un email de validare/confirmare. Odata 
+								validat el va putea folosi butonul de login.
+							<p></p>
+						</section>
+					</li>
+					
+					<li>
+						<section typeof="sa:Abstract">
+							<h3 class="page">
+								Login 
+							</h3>
+							<p>
+								Aceasta pagina reprezinta logarea utilizatorului pe website cu un cont existent.
+							</p>
+							<p>
+								In caz de succes va fi redirectionat catre home page.
+							</p>
+						</section>
+					</li>
+					
+					<li>
+						<section typeof="sa:Abstract">
+							<h3 class="page">
+								Region
+							</h3>
+							<p>
+								Pe aceasta pagina utilizatorul va putea vizualiza obiectele/artefactele regiunii selectate pe prima pagina.
+							</p>
+							<p>
+								Aici i se vor oferi diverse filtre precum : regiune, provenienta, cultura, material, lungime, latime, perioada.
+								Utilizatorul va putea apasa pe oricare dintre obiecte unde va fi redirectionat catre o pagina unde va putea vizualiza detaliile si imaginile respectivului obiect.
+							</p>
+						</section>
+					</li>
+					
+					<figure typeof="sa:Image">
+					<center><p><img src="browseartifactspage.jpg" alt="Pagina Home" width="40%"/></p></center>
+					</figure>
+					
+					
+					<li>
+						<section typeof="sa:Abstract">
+							<h3 class="page">
+								Obiect
+							</h3>
+							<p>
+								Aceasta pagina are scopul de a prezenta imagini si detalii ale obiectului selectat. 
+							</p>
+							<p>
+								Utilizatorul va putea vizualiza toate detaliile precum - numele obiectului, cultura, provenienta, materialul din care este facut, perioada, ascensiune, creator, descriere,
+								zona de cultura, tehnica, descrierea obiectului si desigur imagini la o rezolutie cat mai mare.
+							</p>
+							<p>
+								Sub toate aceste date va fi creat un buton - Adauga in lista- care are ca scop adaugarea obiectului in lista utilizatorului daca acesta este logat. In cazul in care nu este logat
+								el va fi redirectionat catre pagina de login.
+							</p>
+						</section>
+					</li>
+					
+					<li>
+						<section typeof="sa:Abstract">
+							<h3 class="page">
+								Administrare
+							</h3>
+							<p>
+								Aceasta pagina are scopul de a ii permite administratorului de a manageria baza de date
+							</p>
+			
+						</section>
+					</li>
+				</ol>
+</section>
+		
+		
+		</ul>
+		</section>
+
+		<section typeof="sa:ReferenceList" id="bibliografie">
+		
+		<h3>Bibliografie</h3>
+
+		<ul>
+			<li> <a href="https://www.khanacademy.org/">https://www.khanacademy.org/</a></li>
+			<li> <a href="https://www.codecademy.com/">https://www.codecademy.com/</a></li>
+			<li><a href="http://www.w3schools.com/">http://www.w3schools.com/</a></li>
+			<li> <a href="http://forum.codecall.net/">http://forum.codecall.net/</a></li>
+			<li> <a href="http://www.phpclasses.org/">http://www.phpclasses.org/</a></li>
+			<li> <dfn>Atelier de programare în reţele de calculatoare, Polirom, Iaşi, 2001</dfn></li>
+		</ul>
+		</section>
+	</article>
+    <footer>
+      <p>
+        <a href="http://www.info.uaic.ro/bin/Main/">FII</a>
+		•
+        <a href="http://profs.info.uaic.ro/~busaco/teach/courses/web/">Tehnologii Web</a>
+        •
+		 <a href="http://profs.info.uaic.ro/~busaco/teach/courses/web/projects/xml-transform.php?pag=projects">Proiecte</a>
+      </p>
+    </footer>
+</body></html>
