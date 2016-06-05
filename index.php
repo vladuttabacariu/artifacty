@@ -1,6 +1,6 @@
 <!DOCTYPE html5>
 <html>
-	<?php include 'includes/header.php'; ?>
+	<?php include ('includes/header.php'); ?>
 	<body onload="worldmapvar = new worldMap(document.getElementById('map'))">   
 		<?php include 'includes/navigationBar.php'; ?>
 		<div id="container">
@@ -22,7 +22,7 @@
 						<a href=""><img src="images/slider/slider5.jpg"></a>
 					</div>
 				</div>
-				<div id="leftTopContainer">
+				<div id="rightTopContainer">
 					<span>Welcome to the new ARTIFACTY website. There are a number of new features of the website that will make it easier and more enjoyable to use. Please read the <a href="">'About'</a> this site section for more details. </span>
 				</div>
 			</div>

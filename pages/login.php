@@ -2,7 +2,7 @@
 <html>
 	<?php include '../includes/header.php'; ?>
 	<?php //check if already logged in move to home page
-	if( $user->is_logged_in() ){ header('Location: '.DIR.'pages/memberpage.php'); } 
+	if( $user->is_logged_in() ){ header('Location: '.DIR.'index.php'); }
 	//process login form if submitted
 	if(isset($_POST['submit'])){
 
@@ -11,7 +11,12 @@
 		$_SESSION['username'] = $username;
 		if($user->login($username,$password)){ 
 			
-			header('Location: '.DIR.'index.php');
+			if($username=='admin'){
+				header('Location: '.DIR.'pages/admin.php');
+			}else{
+				header('Location: '.DIR.'index.php');
+			}
+			
 			exit;
 		
 		} else {

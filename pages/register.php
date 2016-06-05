@@ -52,12 +52,13 @@
 				$activasion = md5(uniqid(rand(),true));
 				try {
 					//insert into database with a prepared statement
+					
 					$id = $db->lastInsertId('memberID');
-
+					echo $id;
 					//send email
 					$to = $_POST['email'];
 					$subject = "Registration Confirmation";
-					$body = "Thank you for registering at ARTIFACTY site.\n\n To activate your account, please click on this link:\n\n ".DIR."activate.php?x=$id&y=$activasion\n\n Regards Site Admin \n\n";
+					$body = "Thank you for registering at ARTIFACTY site.\n\n To activate your account, please click on this link:\n\n ".DIR."activate.php?y=$activasion\n\n Regards Site Admin \n\n";
 					$additionalheaders = "From: <".SITEEMAIL.">\r\n";
 					$additionalheaders .= "Reply-To: $".SITEEMAIL."";
 					//mail($to, $subject, $body, $additionalheaders);
@@ -70,13 +71,14 @@
 					$mail->Port =465;
 					$mail->SMTPAuth =true;
 					$mail->Username = "vladtabi@gmail.com";
-					$mail->Password = "mypassword91";
+					$mail->Password = "muiemati91";
 					$mail->AddAddress($to,"aaa");
 					//$mail->SetFrom("b","c");
 					$mail->Subject =$subject;
 					$mail->Body = $body;
 					try{
 						$mail->Send();
+						echo 'send';
 						$stmt = $db->prepare('INSERT INTO members (username,password,email,active) VALUES (:username, :password, :email, :active)');
 						$stmt->execute(array(
 						':username' => $_POST['username'],

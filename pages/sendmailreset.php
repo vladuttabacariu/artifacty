@@ -34,7 +34,6 @@
 					':email' => $row['email'],
 					':token' => $token
 				));
-
 				//send email
 				$to = $row['email'];
 				$subject = "Password Reset";
@@ -72,9 +71,7 @@
 			}
 
 		}
-
 	}
-
 	//define page title
 	$title = 'Reset Account';
 	?>
